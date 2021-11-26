@@ -4,9 +4,11 @@
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    box-sizing: border-box;
 }
 
 body {
+    height: 100vh;
     max-height: 100vh;
     display: flex;
 }
@@ -30,16 +32,12 @@ body {
     align-items: center;
 }
 
-.price {
-    height: 50px;
+.product-details-content {
+    min-width: 400px;
 }
 
 
 /* form control */
-
-form {
-    width: 50%;
-}
 
 .form-control {
     margin: 30px 0;
@@ -47,20 +45,20 @@ form {
 
 .form-control label {
     display: block;
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 5px;
 }
 
 .form-control input {
     width: 100%;
-    font-size: 30px;
-    padding: 10px 0;
+    font-size: 20px;
+    padding: 10px 10px;
 }
 
 .form-control select {
     width: 100%;
-    font-size: 30px;
-    padding: 10px 0;
+    font-size: 20px;
+    padding: 10px 10px;
 }
 
 button {
@@ -82,4 +80,22 @@ button:hover {
 button:active {
     background-color: #686868;
     color: #ffe4c4;
+}
+
+#result {
+    display: none;
+    padding: 20px;
+    border-radius: 35px;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+#result.success {
+    font-weight: 700;
+    background-color: #00bb45;
+}
+
+#result.error {
+    background-color: #ff2323;
 }

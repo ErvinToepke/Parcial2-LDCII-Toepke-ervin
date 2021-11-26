@@ -5,39 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cotizador - iPhone 13 Pro</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <div class="product-image">
-        <img src="img/iphone_13_silver.png" alt="iphone" />
+        <img src="img/iphone_13.png" alt="iphone" />
     </div>
     <div class="product-details">
-        <form action="">
-            <div class="form-control">
-                <label>Color</label>
-                <select onchange="changeProductImage()">
-                    <option value="silver">Silver</option>
-                    <option value="sierra">Sierra</option>
-                    <option value="gold">Gold</option>
-                </select>
-            </div>
-            <div class="form-control">
-                <label>Capacidad</label>
-                <select>
-                    <option value="0">128 GB</option>
-                    <option value="125">256 GB</option>
-                    <option value="150">512 GB</option>
-                </select>
-            </div>
-            <div class="form-control">
-                <label>Cantidad</label>
-                <input type="text" />
-            </div>
-            <div class="price"></div>
-            <button type="button" onclick="calculatePrice()">Cotizar</button>
-        </form>
+        <div class="product-details-content">
+            <h2>iPhone 13 Pro</h2>
+            <form action="">
+                <div class="form-control">
+                    <label>Color</label>
+                    <select onchange="changeProductImage()">
+                        <option disabled selected value="0"> -- Seleccione una opción -- </option>
+                        <option value="graphite">Grafito</option>
+                        <option value="silver">Silver</option>
+                        <option value="sierra">Sierra</option>
+                        <option value="gold">Gold</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <label>Capacidad</label>
+                    <select>
+                        <option disabled selected value="0"> -- Seleccione una opción -- </option>
+                        <option value="128">128 GB</option>
+                        <option value="256">256 GB</option>
+                        <option value="512">512 GB</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <label>Cantidad</label>
+                    <input type="number" value="0" />
+                </div>
+                <div class="form-control">
+                    <button type="button" onclick="calculatePrice()">Cotizar</button>
+                </div>
+                <div class="form-control">
+                    <div id="result"></div>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 
