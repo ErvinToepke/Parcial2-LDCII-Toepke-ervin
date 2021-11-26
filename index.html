@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cotizador - iPhone 13 Pro</title>
+    <title>Título</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <div class="product-image">
-        <img src="img/iphone_13.png" alt="iphone" />
+        <img src="ASDASD.png" alt="iphone" />
     </div>
     <div class="product-details">
         <div class="product-details-content">
@@ -22,9 +22,6 @@
                     <select onchange="changeProductImage()">
                         <option disabled selected value="0"> -- Seleccione una opción -- </option>
                         <option value="graphite">Grafito</option>
-                        <option value="silver">Silver</option>
-                        <option value="sierra">Sierra</option>
-                        <option value="gold">Gold</option>
                     </select>
                 </div>
                 <div class="form-control">
@@ -32,19 +29,17 @@
                     <select>
                         <option disabled selected value="0"> -- Seleccione una opción -- </option>
                         <option value="128">128 GB</option>
-                        <option value="256">256 GB</option>
-                        <option value="512">512 GB</option>
                     </select>
                 </div>
                 <div class="form-control">
                     <label>Cantidad</label>
-                    <input type="number" value="0" />
+                    <input type="text" />
                 </div>
                 <div class="form-control">
                     <button type="button" onclick="calculatePrice()">Cotizar</button>
                 </div>
-                <div class="form-control">
-                    <div id="result"></div>
+                <div id="result" class="form-control">
+                    Resultado cotización o error
                 </div>
             </form>
         </div>

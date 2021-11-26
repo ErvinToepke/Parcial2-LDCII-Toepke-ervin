@@ -83,19 +83,9 @@ button:active {
 }
 
 #result {
-    display: none;
     padding: 20px;
     border-radius: 35px;
-    color: #fff;
+    color: hotpink;
     text-align: center;
     font-size: 20px;
-}
-
-#result.success {
-    font-weight: 700;
-    background-color: #00bb45;
-}
-
-#result.error {
-    background-color: #ff2323;
 }
