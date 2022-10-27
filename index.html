@@ -5,35 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>cotizador|Ervin-Toepke</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <div class="product-image">
-        <img src="ASDASD.png" alt="iphone" />
+    <div class="product-image" id="imagen">
+        <img src="./img/iphone_13.png" alt="iphone"/>
+        <br><br>  
+            
     </div>
+    <div class="description" id="description"></div>
     <div class="product-details">
         <div class="product-details-content">
             <h2>iPhone 13 Pro</h2>
             <form action="">
-                <div class="form-control">
+                <div class="form-control">  
                     <label>Color</label>
-                    <select onchange="changeProductImage()">
+                    <select id="color" onchange="changeProductImage()">
                         <option disabled selected value="0"> -- Seleccione una opción -- </option>
                         <option value="graphite">Grafito</option>
+                        <option value="silver">Silver</option>
+                        <option value="sierra">Sierra</option>
+                        <option value="gold">Gold</option>
                     </select>
                 </div>
                 <div class="form-control">
                     <label>Capacidad</label>
-                    <select>
+                    <select id="capacidad">
                         <option disabled selected value="0"> -- Seleccione una opción -- </option>
-                        <option value="128">128 GB</option>
+                        <option value="485000.00">128 GB</option>
+                        <option value="617000.00">256 GB</option>
+                        <option value="1006800.00">512 GB</option>
                     </select>
                 </div>
                 <div class="form-control">
                     <label>Cantidad</label>
-                    <input type="text" />
+                    <input type="number" name="cantidad" id="cantidad"/>
                 </div>
                 <div class="form-control">
                     <button type="button" onclick="calculatePrice()">Cotizar</button>
@@ -45,5 +53,5 @@
         </div>
     </div>
 </body>
-
+<script src="./script.js"></script>
 </html>
